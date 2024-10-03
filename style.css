@@ -35,11 +35,16 @@ nav {
   padding: 30px;
   border-right: 1px solid #ddd;
   font-family: "Ubuntu", sans-serif;
+  position: sticky;
+  top: 20px;
 }
 aside {
   padding: 30px;
   border-left: 1px solid #ddd;
   font-family: "Ubuntu", sans-serif;
+  gap: 2px;
+  position: sticky;
+  top: 20px;
 }
 article {
   padding: 30px;
@@ -84,6 +89,23 @@ nav li {
   margin-right: 10px;
   gap: 2px;
 }
+navbar{
+  grid-column: span 3;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 20px;
+  background-color: rgb(255, 244, 234);
+  border-radius: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+navbar, li {
+  margin: 10px;
+  justify-content: center;
+}
+.home{
+  display: flex;
+}
+
 
 @media screen and (max-width: 1200px) {
   nav {
